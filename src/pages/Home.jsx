@@ -28,7 +28,7 @@ function Home() {
         })
         .catch(() => {
           setCountries([]);
-          setError("No countries found.");
+          setError("No countries found");
         })
         .finally(() => setLoading(false));
     }, 400);
@@ -37,7 +37,7 @@ function Home() {
   }, [query]);
 
   return (
-    <div>
+    <div style={{ textAlign: "center" }}>
       <input
         type="text"
         placeholder="Search for a country..."
@@ -54,7 +54,7 @@ function Home() {
         ))}
       </div>
 
-      {!loading && !error && countries.length === 0 && !query && (
+      {!loading && !error && countries.length === 0 && query && (
         <p>Start searching to explore countries.</p>
       )}
     </div>
