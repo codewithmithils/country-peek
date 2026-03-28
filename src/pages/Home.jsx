@@ -10,6 +10,7 @@ function Home() {
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
+
       <p>Start searching to explore countries.</p>
     </div>
   );

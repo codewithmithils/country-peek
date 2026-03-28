@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 
 function Header() {
   return (
-    <header>
+    <div>
       <h2>CountryPeek</h2>
-      <nav>
-        <Link to="/">Home</Link>{" "}
-        <Link to="/favourites">Favourites</Link>
-      </nav>
-    </header>
+
+      <Link to="/">Home</Link>
+      <br />
+      <Link to="/favourites">Favourites</Link>
+    </div>
   );
 }
 
